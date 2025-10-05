@@ -1,0 +1,33 @@
+# Coconut with BFS loss training configuration
+# Requires 2 GPUs
+
+project: coconut-dynamic
+save_path: ckpts
+name: "coconut-bfs-loss"
+
+only_eval: False
+bfs-paper-loss: True
+
+c_thought: 1
+epochs_per_stage: 50
+first_stage_epochs: 100
+max_latent_stage: 4
+pad_latent_to_max: True
+
+save_only_improve: False
+uniform_prob: 0.1
+model_id: configs/symbol-2layer-8head-768dim.json
+load_model_path: None
+seed: 0
+resume: 0
+bf16: False
+train_path: data/prosqa_train_graph_4_bfs.json
+val_path: data/prosqa_valid_graph_4_bfs_shuffled.json
+shuffle_nodes: True
+reset_optimizer: True
+batch_size_training: 256
+debug: False
+gradient_accumulation_steps: 1
+num_epochs: 350
+lr: !!float "1e-4"
+weight_decay: 0.01

@@ -1,0 +1,11 @@
+__pycache__
+wandb
+ckpts/
+*.out
+*.err
+*.png
+*.pdf
+
+# Keep important JSON files
+!configs/*.json
+!data/*.json
