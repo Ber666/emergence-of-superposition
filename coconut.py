@@ -7,7 +7,6 @@ from torch.nn import CrossEntropyLoss
 from collections import namedtuple
 from transformers.models.gpt2 import GPT2LMHeadModel
 from transformers.models.gpt2.modeling_gpt2 import GPT2Block
-from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
 from transformers.models.gpt2.modeling_gpt2 import eager_attention_forward
 from transformers.utils import logging
 from typing import Optional, Tuple, Union, Callable
