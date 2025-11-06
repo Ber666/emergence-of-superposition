@@ -6,7 +6,7 @@ Official implementation for **[Emergence of Superposition: Unveiling the Trainin
 
 This work investigates the training dynamics of Chain of Continuous Thought ([Coconut](https://arxiv.org/abs/2412.06769)). This repository includes:
 
-- **ProsQA Dataset**: Synthetic graph search dataset requiring multi-hop reasoning. Different from previous work ([Coconut](https://github.com/facebookresearch/coconut), [Reasoning-by-Superposition](https://github.com/Ber666/reasoning-by-superposition)), the datasets are shuffled to better align with the theory.
+- **ProsQA Dataset**: Synthetic graph search dataset requiring multi-hop reasoning. Different from previous work ([Coconut](https://github.com/facebookresearch/coconut), [Reasoning-by-Superposition](https://github.com/Ber666/reasoning-by-superposition)), the node indices in each graph are randomly shuffled to better align with the theory.
 
 - **Coconut and Coconut-BFS Training**: Updated code for training both standard Coconut and Coconut-BFS. The BFS loss function is described in Appendix E.2 of the paper.
 
